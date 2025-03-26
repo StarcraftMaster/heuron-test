@@ -5,7 +5,7 @@
   별도의 설치와 실행/종료의 번거로움을 없앴습니다.
 - application 구동후 http://localhost:8080/h2-console/ 으로 해당 db에 접속이 가능합니다
   - Saved Settings: Generic H2(Embedded)
-  - Driver Calss : org.h2.Driver
+  - Driver Class : org.h2.Driver
   - JDBC URL : jdbc:h2:mem:test
   - User Nme : sa
   - Password 는 없습니다.
