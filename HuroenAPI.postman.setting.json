@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "9789f90a-1989-4917-9bdb-35dc7bcc14c6",
+		"name": "HuroenAPI",
+		"description": "백앤드 과제",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13482409"
+	},
+	"item": [
+		{
+			"name": "/api/v1/patients/{pid}",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/patients/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"patients",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/patients/{pid}/pat-image/patient.png",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/patients/1/pat-image/patient.png",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"patients",
+						"1",
+						"pat-image",
+						"patient.png"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/patients/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "patInfoRequest",
+							"value": "{\"patientName\":\"홍길동\",\"age\":1,\"sexCd\":\"M\",\"diseaseStatus\":\"Y\"}",
+							"contentType": "application/json",
+							"type": "text"
+						},
+						{
+							"key": "patImg",
+							"contentType": "",
+							"type": "file",
+							"src": "/Users/chaegyuhyang/Desktop/lecture/피카츄_(1).png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/patients/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"patients",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/patients/",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/patients/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"patients",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
