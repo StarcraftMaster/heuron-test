@@ -10,7 +10,7 @@
   - User Nme : sa
   - Password 는 없습니다.
 - In-Memory 방식으로 어플리케이션 종료시 데이터가 소거됨으로 테스트가 쉽게 할 수 있게 해당 프로젝트에 PostMan 설정 파일을 첨부 해놨습니다
-  (HuroenAPI.postman.setting.json) 해당파일을 포스트맨에 끌어다 놓으면 자동으로 Collection이 생성되어 테스트를 좀더 쉽게 할 수 있게 준비 했습니다.
+  (HuroenAPI.postman.setting.json) 해당파일을 포스트맨에 끌어다 놓으면 자동으로 Collection이 생성되어 테스트를 좀더 쉽게 할 수 있도록 준비 했습니다.
 - PostMan 설정 파일은(HuroenAPI.postman.setting.json) README.md와 같은 디렉토리에 있습니다.
 - 환자등록 api 사용 시 이미지 업로드 형식은 jpeg, png만 가능 하도록 설계 했으니 이점 참고부탁드립니다..
 
