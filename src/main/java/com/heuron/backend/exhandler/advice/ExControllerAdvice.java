@@ -62,7 +62,7 @@ public class ExControllerAdvice {
 
         Map<String, Object> errorDetails = new HashMap<>();
         errorDetails.put("status", HttpStatus.BAD_REQUEST.value());
-        errorDetails.put("message", "Validation failed for one or more fields");
+        errorDetails.put("message", "유효성 검사 실패");
 
         errorDetails.put("errors", errors);
 
