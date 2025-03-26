@@ -1,8 +1,14 @@
 # Heuron 백앤드 과제
 
-## 기본 사항
+## 기본 세팅 사항
 - 테스트 데이터베이는 H2 Databse를 사용하였으며 In-Memory 로동작하여 해당 어플리케이션이 동작할때만 사용할 수 있도록 설계하여
   별도의 설치와 실행/종료의 번거로움을 없앴습니다.
+- application 구동후 http://localhost:8080/h2-console/ 으로 해당 db에 접속이 가능합니다
+  - Saved Settings: Generic H2(Embedded)
+  - Driver Calss : org.h2.Driver
+  - JDBC URL : jdbc:h2:mem:test
+  - User Nme : sa
+  - Password 는 없습니다.
 - In-Memory 방식으로 어플리케이션 종료시 데이터가 소거됨으로 테스트가 쉽게 할 수 있게 해당 프로젝트에 PostMan 설정 파일을 첨부 해놨습니다
   (HuroenAPI.postman.setting.json) 해당파일을 포스트맨에 끌어다 놓으면 자동으로 Collection이 생성되어 테스트를 좀더 쉽게 할 수 있게 준비 했습니다.
 - PostMan 설정 파일은(HuroenAPI.postman.setting.json) README.md와 같은 디렉토리에 있습니다.
